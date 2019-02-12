@@ -1,43 +1,44 @@
-# Ignite UI for Angular hands-on workshop
+# Infragistics WPF 製品体験ハンズオン
+## このハンズオンコンテンツについて
 
-## About this workshop
+このハンズオンは、Infragistics の WPF 製品を利用してみたい、WPF 開発プロジェクトでグリッドやチャートなどUI部品を探している、そんな方向けに作成したコンテンツです。このハンズオンを通じてInfragisticsの各UI部品や Control Configulator を実際に利用し、ツール利用の生産性の高さを体験いただけます。
 
-This workshop is for those who want to try Infragistics products in WPF application development or who are looking for rich and fast WPF UI controls, e.g. grid and chart. You can experience how to build WPF app with Infragistics WPF controls and Control Configulator and see its productivity through this workshop.
+[英語版はこちら(English content)](https://github.com/gdayori/infragistics-wpf-workshop)
 
-## Check your environment
+## 環境確認
 
-Before starting this hands-on workshop please check your environment to see if it's ready.
+ハンズオンを始める前に、以下の環境要件を確認してください。
 
 [Required Environment](docs/00-Environment.md)
 
-## Application for the workshop
+## ハンズオンで使用するWPFアプリケーション
 
-Download the copy of this repository and find infragistics-wpf-workshop/src/before/IgWpfWorkshop which would be the start point of the workshop. This project has all Models and ViewModels required in the workshop but the views have empty so that you can focus on creating views with Infragistics products. Please open it with Visual Studio and build to see if it can work on your PC.
+当リポジトリのコピーをダウンロードし、「infragistics-wpf-workshop-jp/src/before/IgWpfWorkshop」にあるWPFプロジェクトを起動してみてください。このプロジェクトがハンズオンを始める元となります。このプロジェクトは、ハンズオンに必要なModelやViewModel、データなどを全て含んでおり、ハンズオンの中ではViewに専念することができるようになっています。
 
-Note that there's After folder which contains the expected project when you completed all instructions, Section 1 to Section 3.
+なお、Afterフォルダの中には、このハンズオンコンテンツが全て完了した場合の想定プロジェクトが格納されています。時間が足りずに最後までできなかった場合は、Afterフォルダの中のプロジェクトでコードや結果を確認できます。
 
-## All steps
+## 手順
 
-1. [Section 1 - Get started with Infragistics grid control](docs/01-Use-Infragistics-Grid-control/01-00-Overview-of-Section1.md)
+1. [Section 1 - グリッド部品を利用した一覧の作成](docs/01-Use-Infragistics-Grid-control/01-00-Overview-of-Section1.md)
     1. [Get started with XamDataGrid](docs/01-Use-Infragistics-Grid-control/01-01-Get-started-with-XamDataGrid.md)
     2. [Configure XamDataGrid](docs/01-Use-Infragistics-Grid-control/01-02-Configure-XamDataGrid.md)
-2. [Section 2 - Create a dashboard with-Control Configulator](docs/02-Create-dashboard-with-Control-Configulator/02-00-Overview-of-Section2.md)
+2. [Section 2 - チャート部品とControl Configulatorを利用したダッシュボードの作成](docs/02-Create-dashboard-with-Control-Configulator/02-00-Overview-of-Section2.md)
     1. [Install Control Configulator](docs/02-Create-dashboard-with-Control-Configulator/02-01-Install-Control-Configulator.md)
     2. [Layout screen with XamTileManager](docs/02-Create-dashboard-with-Control-Configulator/02-02-Layout-screen-with-XamTileManager.md)
     3. [Configure PieChart](docs/02-Create-dashboard-with-Control-Configulator/02-03-Configure-PieChart.md)
     4. [Configure BulletGraph](docs/02-Create-dashboard-with-Control-Configulator/02-04-Configure-BulletGraph.md)
     5. [Configure Grid](docs/02-Create-dashboard-with-Control-Configulator/02-05-Configure-Grid.md)
     6. [Configure CategoryChart](docs/02-Create-dashboard-with-Control-Configulator/02-06-Configure-CategoryChart.md)
-3. [Section 3 - Create Self-BI UI with Pivot controls](docs/03-Create-Self-BI-UI-with-Pivot-controls/03-00-Overview-of-Section3.md)
+3. [Section 3 - ピボット部品を利用したセルフBI画面の作成](docs/03-Create-Self-BI-UI-with-Pivot-controls/03-00-Overview-of-Section3.md)
     1. [Use FlatDataSource](docs/03-Create-Self-BI-UI-with-Pivot-controls/03-01-Use-FlatDataSource.md)
     2. [Use Pivot Controls](docs/03-Create-Self-BI-UI-with-Pivot-controls/03-02-Use-Pivot-Controls.md)
 
-## What you create through this workshop.
-Section 1 - Get started with Infragistics grid control
+## ハンズオンで作成するWPFアプリケーションのイメージ
+Section 1 - グリッド部品を利用した一覧の作成
 ![](docs/assets/01-02-01.png)
 
-Section 2 - Create a dashboard with-Control Configulator
+Section 2 - チャート部品とControl Configulatorを利用したダッシュボードの作成
 ![](docs/assets/02-06-07.png)
 
-Section 3 - Create Self-BI UI with Pivot controls
+Section 3 - ピボット部品を利用したセルフBI画面の作成
 ![](docs/assets/03-02-01.png)

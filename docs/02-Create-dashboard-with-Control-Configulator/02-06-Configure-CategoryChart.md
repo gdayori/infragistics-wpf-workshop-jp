@@ -1,10 +1,10 @@
-# Configure CategoryChart
+# CategoryChart の利用
 
-You add a chart here to express monthly sales trend. You use CategoryChart to achieve it and configure it by Infragistics Control Configulator.
+月毎の売り上げ推移を表現するためにXamCategoryChartを利用します。
 
-## Check the datasource to be bound to XamCategoryChart.
+## XamPieChart へバインドするデータソースの確認
 
-Open DashboardViewModel.cs, set a breakpoint and start debugging to see what's in the bound data MonthlySalesAmount. That should be like below.
+DashboardViewModel.cs を開いて、ブレークポイントを設定してから実行し、MonthlySalesAmount の中にどんなデータが入っているのか見てみましょう。
 
 | Month | AmountOfSale |
 ----|---- 
@@ -13,16 +13,16 @@ Open DashboardViewModel.cs, set a breakpoint and start debugging to see what's i
 | ... | ... |
 
 
-## Put XamCategoryChart
+## XamCategoryChart の配置
 
-In Dashboard.xaml, put XamCategoryChart on the 4th tile and reset its layout.
+Dashboard.xaml を開き、月別売り上げのタイル内にXamPieChart を配置し、レイアウトをリセットします。
 
 Dashboard.xaml
 
 ```xml
 ...
 <ig:XamTile
-    Header="Monthly Sales Amount in this year"
+    Header="月別売り上げ"
     ig:XamTileManager.Column="0"
     ig:XamTileManager.Row="1" 
     ig:XamTileManager.ColumnSpan="2"
@@ -32,44 +32,45 @@ Dashboard.xaml
 ...
 ```
 
-## Configure XamCategoryChart with Control Configulator.
+## Control Configulator で XamCategoryChart を設定
 
-Click the line of the XamCategoryChart definition and then a light bulb should show up on the left side. Hit Ctrl + . or click the light bulb and select "Configure XamCategoryChart". In the configure dialog find ItemsSource property in the property window and Select "Create Data Binding".
+XamCategoryChartが定義されている行をクリックすると、左側に豆電球アイコンが表示されます。その豆電球をクリックするか、Ctrl + .キーを押して"構成 XamBulletGraph"メニューをさらに選択します。Control Configulator のダイアログ上のプロパティウィンドウ上でItemsSourceプロパティを見つけて、"データバインドの作成"を選択します。
 
 ![](../assets/02-06-01.png)
 
-In the dialog, select MonthlySalesAmount and click the button "Create Binding".
+MonthlySalesAmount を選択し、"バインディングの作成"をクリックします。
 
 ![](../assets/02-06-02.png)
 
-Change the chart type to the default for displaying normal column chart (bar chart).
+チャートタイプよりデフォルトのカラムチャートを選択します。
 
 ![](../assets/02-06-03.png)
 
-To display a trend line, set TrendLineType to CubicFit.
+トレンドラインを表示するために、TrendLineTypeプロパティでCubicFitを選択します。
 
 ![](../assets/02-06-04.png)
 
-Set XAxisInterval property to 1 so all months can have own label, 1 to 12.
+XAxisInterval プロパティに1を設定し、すべての月がラベル表示されるようにします。
 
 ![](../assets/02-06-05.png)
 
-Configure with other properties and click the button "Apply & Close" when you completed.
+XamCategoryChart のその他の設定を任意で行い、最後に「適用して閉じる」ボタンをクリックして設定を終了します。
 
 ![](../assets/02-06-06.png)
 
-## Check the result
+## 結果確認
 
-Run the app and check the result.
+アプリケーションを実行し、結果を確認します。
 
 ![](../assets/02-06-07.png)
 
-## Note
-XamCategoryChart is a hi-performance chart which is simple and easy to use, but you can't develop very complex chart, e.g. overlaying multiple charts and having multiple axes. If you want to implement such complex chart UI then you can use XamDataChart insted.
+## 備考
 
-[Getting Started with XamCategoryChart](https://www.infragistics.com/help/wpf/categorychart-walkthrough)
+XamCategoryChartは少ないコードで簡単にデータ視覚化を実現するための部品として提供されています。複数レイヤの表示や細かい軸の設定など、複雑なチャート表現を実現するためにはXamDataChartという別のチャートコントロールが提供されています。
 
-[Getting Started with XamDataChart](https://www.infragistics.com/help/wpf/datachart-getting-started-with-datachart)
+[XamCategoryChart ヘルプ](https://jp.infragistics.com/help/wpf/categorychart-walkthrough)
+
+[XamDataChart ヘルプ](https://jp.infragistics.com/help/wpf/datachart-getting-started-with-datachart)
 
 ## Next
 [Overview of Section3](../03-Create-Self-BI-UI-with-Pivot-controls/03-00-Overview-of-Section3.md)

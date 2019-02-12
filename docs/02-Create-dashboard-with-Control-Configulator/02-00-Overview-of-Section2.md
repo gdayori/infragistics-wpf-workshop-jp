@@ -1,8 +1,8 @@
-# Generate Angular project with igniteui-cli
+# チャート部品とControl Configulatorを利用したダッシュボードの作成
 
-In this section, you can learn how to Infragistics Control Configulator and eventually make a rich dashboard with some Infragistics WPF controls in Dashboard.xaml.
+このセクションではチャート部品と Control Configulator を利用してリッチなダッシュボードを作成します。
 
-## Steps
+## 手順
 1. [Install Control Configulator](02-01-Install-Control-Configulator.md)
 2. [Layout screen with XamTileManager](02-02-Layout-screen-with-XamTileManager.md)
 3. [Configure PieChart](02-03-Configure-PieChart.md)
@@ -10,9 +10,9 @@ In this section, you can learn how to Infragistics Control Configulator and even
 5. [Configure Grid](02-05-Configure-Grid.md)
 6. [Configure CategoryChart](02-06-Configure-CategoryChart.md)
 
-## What you build in this section
+## このセクションで作成する画面イメージ
 
 ![](../assets/02-06-07.png)
 
 ## Next
-[02-01 Install Control Configulator](02-01-Install-Control-Configulator.md)
+[02-01 Control Configulator のインストール](02-01-Install-Control-Configulator.md)

@@ -1,21 +1,21 @@
-# Configure BulletGraph
+# BulletGraph の利用
 
-You add a bullet graph here to express how the total sales this year goes on compared to the sales target. You use XamBulletGraph to achieve it and configure it by Infragistics Control Configulator.
+ここでは、売上合計を表示するためのXamBulletGraphを使って、バレットグラフをタイルに追加します。
 
-## Check the datasource to be bound to XamBulletGraph.
+## XamBulletGraph へバインドするデータソースの確認
 
-Open DashboardViewModel.cs, set a breakpoint and start debugging to see what's in the bound data TotalSalesThisYear and SalesTargetThisYear. Each property should return interger value.
+DashboardViewModel.cs を開いて、ブレークポイントを設定してから実行し、TotalSalesThisYear と SalesTargetThisYear の中にどんなデータが入っているのか見てみましょう。
 
-## Put XamBulletGraph
+## XamBulletGraph の配置
 
-In Dashboard.xaml, put XamBulletGraph on the second tile and reset its layout. You would like to put not only a bullet graph but also a TextBlock above the graph to display the value with large size font. Put the TextBlock and the XamBulletGraph inside a StackPanel as below.
+Dashboard.xaml を開き、年間売り上げのタイル内に StackPanel を配置し、更にその中に XamBulletGraph と TextBlock を配置しそれぞれレイアウトをリセットします。
 
 Dashboard.xaml
 
 ```xml
 ...
 <ig:XamTile
-    Header="Total Sales Amount in this year"
+    Header="年間売り上げ"
     ig:XamTileManager.Column="1"
     ig:XamTileManager.Row="0" 
     ig:XamTileManager.ColumnSpan="1"
@@ -28,29 +28,30 @@ Dashboard.xaml
 ...
 ```
 
-## Configure XamBulletGraph with Control Configulator.
+## Control Configulator で XamBulletGraph を設定
 
-Click the line of the XamBulletGraph definition and then a light bulb should show up on the right side. Hit Ctrl + . or click the light bulb and select "Configure XamBulletGraph". The configulator would show up. In the configulator dialog, filter by "value" in the property window.
+XamBulletGraphが定義されている行をクリックすると、左側に豆電球アイコンが表示されます。その豆電球をクリックするか、Ctrl + .キーを押して"構成 XamBulletGraph"メニューをさらに選択します。Control configulator ダイアログが表示されたら、プロパティウィンドウ上の検索BOX内で"value"と入力し、プロパティをフィルタします。
 
 ![](../assets/02-04-01.png)
 
-Bind TargetValue property to SalesTargetThisYear and Value property to TotalSalesThisYear.
+TargetValue プロパティへ SalesTargetThisYear を、Value プロパティへ TotalSalesThisYear をそれぞれ設定します。
 
 ![](../assets/02-04-02.png)
 
-Change Gauges Holizontal setting as below
+水平ゲージの設定を以下のように変更します。 
 
 ![](../assets/02-04-03.png)
 
-Change the properties, Max, Value(which is just a test data), Target Value(which is just a test data), intercal as below. In Ranges pane, click clear button once and put 2 in the input then click create. It makes 3 ranges by calculating with Max value and the splitting count.
+最小値、最大値、デザインタイムデータの値や目標値を以下のように設定します。
+範囲タブ上では、一度「クリア」ボタンで値をクリアしてから、入力領域に3を設定して「作成」ボタンをクリックします。すると、最大値をベースに自動的に3つのレンジを自動的に計算・生成してくれます。
 
 ![](../assets/02-04-04.png)
 
-Configure XamBulletGraph if you would like to do more. When you completed click the button "Apply & Close".
+XamBulletGraph のその他の設定を任意で行い、最後に「適用して閉じる」ボタンをクリックして設定を終了します。
 
-## Bind TextBlock to the TotalSales.
+## TextBlock へ TotalSales を設定.
 
-Bind TextBlock to TotalSalesThisYear and configure its looks as below.
+TextBlockのTextプロパティへTotalSalesThisYearをバインドします。以下のようにコードを記述してください。
 
 Dashboard.xaml
 
@@ -61,15 +62,16 @@ Dashboard.xaml
 ...
 ```
 
-## Check the result
+## 結果確認
 
-Run the app and check the result.
+アプリケーションを実行し、結果を確認します。
 
 ![](../assets/02-04-05.png)
 
-## Note
-If you want to learn more about XamBulletGraph, check the help topic here.
-[Adding Bullet Graph](https://www.infragistics.com/help/wpf/bulletgraph-adding)
+## 備考
+XamBulletGraphについて、より詳細を知りたい方は以下のリンクよりヘルプトピックをご確認下さい。
+
+[Bullet Graph ヘルプ](https://jp.infragistics.com/help/wpf/bulletgraph-adding)
 
 ## Next
 [02-05 Configure Grid](02-05-Configure-Grid.md)

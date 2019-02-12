@@ -105,9 +105,9 @@ Bind XamDataChart to SalesFlatDataSource and configure some property reagrding O
 ...
 ```
 
-## Check the result
+## 結果確認
 
-Run the app and check the result.
+アプリケーションを実行し、結果を確認します。
 
 ![](../assets/03-02-01.png)
 

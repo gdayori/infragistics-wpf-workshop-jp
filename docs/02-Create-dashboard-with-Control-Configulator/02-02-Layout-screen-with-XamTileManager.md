@@ -1,12 +1,14 @@
-# Layout window with XamLayoutManager
+# XamTileManager を利用したダッシュボードのレイアウト作成
 
-## Put and configure XamTileManager
+XamTileManager はタイル形式のUIで画面レイアウトを構成します。ユーザがタイルの配置やサイズを変更することができるダッシュボードを簡単に作成する事ができます。
 
-Open Dashboard.xaml and put XamTileManager from the toolbox on the designer.
+## XamTileManager の配置
+
+Dashboard.xaml を開いてツールボックスから XamTileManager をデザイナ上へ配置します。
 
 ![](../assets/02-02-01.png)
 
-Add some tiles for dashboard widgets in XamTileManager and configure them as below. Just copy & paste the code below to your project, it's not so important writing all code by hand here.
+XamTileManager 内で、ダッシュボードのウィジェットとしてタイルをいくつか配置し、以下のように設定します。コード量が多いため、コピー＆ペーストでOKです。
 
 Dashboard.xaml
 
@@ -25,7 +27,7 @@ Dashboard.xaml
         </ig:XamTileManager.NormalModeSettings>
 
         <ig:XamTile
-            Header="Sales Amount By Product in this year"
+            Header="年間製品別売上比率"
             ig:XamTileManager.Column="0"
             ig:XamTileManager.Row="0" 
             ig:XamTileManager.ColumnSpan="1"
@@ -33,7 +35,7 @@ Dashboard.xaml
         </ig:XamTile>
 
         <ig:XamTile
-            Header="Total Sales Amount in this year"
+            Header="年間売り上げ"
             ig:XamTileManager.Column="1"
             ig:XamTileManager.Row="0" 
             ig:XamTileManager.ColumnSpan="1"
@@ -41,7 +43,7 @@ Dashboard.xaml
         </ig:XamTile>
 
         <ig:XamTile
-            Header="Top 30 large deals in this year"
+            Header="取引上位30"
             ig:XamTileManager.Column="2"
             ig:XamTileManager.Row="0" 
             ig:XamTileManager.ColumnSpan="1"
@@ -49,7 +51,7 @@ Dashboard.xaml
         </ig:XamTile>
 
         <ig:XamTile
-            Header="Monthly Sales Amount in this year"
+            Header="月別売り上げ"
             ig:XamTileManager.Column="0"
             ig:XamTileManager.Row="1" 
             ig:XamTileManager.ColumnSpan="2"
@@ -60,24 +62,24 @@ Dashboard.xaml
 ...
 ```
 
-XamTileManager has 4 tiles which are for
- - Displaying Sales Amount By Product in a **PieChart**
- - Displaying Total Sales Amount in **BulletGraph**
- - Displaying Top 30 large deals in **Grid**
- - Displaying Monthly Sales Amount in **Chart**
+XamTileManager 内で4つのタイルを構成します。
+ - 年間製品別売上比率
+ - 年間売り上げ
+ - 取引上位30
+ - 月別売り上げ
 
-## Check the result
+## 結果確認
 
-Run the app and check the result. You can change the tile layout by dragging & dropping or clicking the tile icon on right side of the tile header.
+アプリケーションを実行し、結果を確認します。タイルのヘッダー部をドラッグ＆ドロップするか、ヘッダー部のタイルアイコンをクリックすることで、タイルを入れ替えたり拡大したりすることができます。
 
 ![](../assets/02-02-02.png)
 
-## Note
-You can learn more about XamTileManager in the help topic.
+## 備考
+XamTileManager についてより詳しい情報は以下のヘルプトピックより確認いただけます。
 
 [Using xamTileManager](https://www.infragistics.com/help/wpf/xamtilemanager-using-xamtilemanager)
 
-Infragistics WPF contains another nice layout control named XamDockManager which provides experience like Visual Studio docking pane. If you have some time to give it try, check the help topic and try it!
+少し似たレイアウト系のUI部品として、XamDockManagerという部品も提供されています。Visuao Studioのドッキングペインのように、ペインをフローティングさせたりドッキングさせてタブ切り替えしたいすることがでいます。
 
 [Using xamDockManager](https://www.infragistics.com/help/wpf/xamdockmanager-using-xamdockmanager)
 

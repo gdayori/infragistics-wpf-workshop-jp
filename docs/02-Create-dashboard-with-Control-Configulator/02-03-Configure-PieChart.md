@@ -1,27 +1,27 @@
-# Configure PieChart
+# PieChartの利用
 
-You add a pie chart here to express the ratio of the amount of sales by products. You use XamPieChart to achieve it and configure it by Infragistics Control Configulator.
+年間の製品ごとの売上比率を表現するために XamPieChart を利用します。
 
-## Check the datasource to be bound to XamPieChart.
+## XamPieChart へバインドするデータソースの確認
 
-Open DashboardViewModel.cs, set a breakpoint and start debugging to see what's in the bound data SalesAmountByProduct. That should be like below 
+DashboardViewModel.cs を開いて、ブレークポイントを設定してから実行し、SalesAmountByProduct の中にどんなデータが入っているのか見てみましょう。
 
 | AmountOfSale | ProductName |
 ----|---- 
-| 123 | Banana |
-| 456 | Grape |
+| 123 | みかん |
+| 456 | ぶどう |
 | ... | ... |
 
-## Put XamPieChart
+## XamPieChart の配置
 
-In Dashboard.xaml, put XamPieChart on the first tile and reset its layout.
+Dashboard.xaml を開き、年間製品別売上比率のタイル内にXamPieChart を配置し、レイアウトをリセットします。
 
 Dashboard.xaml
 
 ```xml
 ...
 <ig:XamTile
-    Header="Sales Amount By Product in this year"
+    Header="年間製品別売上比率"
     ig:XamTileManager.Column="0"
     ig:XamTileManager.Row="0" 
     ig:XamTileManager.ColumnSpan="1"
@@ -31,40 +31,41 @@ Dashboard.xaml
 ...
 ```
 
-## Configure XamPieChart with Control Configulator.
+## Control Configulator で XamPieChart を設定
 
-Click the line of the XamPieChart definition and then a light bulb should show up on the left side. Hit Ctrl + . or click the light bulb and select "Configure XamPieChart".
+XamPieChartが定義されている行をクリックすると、左側に豆電球アイコンが表示されます。その豆電球をクリックするか、Ctrl + .キーを押して"構成 XamPieChart"メニューをさらに選択します。
 
 ![](../assets/02-03-01.png)
 
-Then the configulator shows up. 
+Control configulator のダイアログが表示されます。
 
 ![](../assets/02-03-02.png)
 
-The first thing you need to do on the configulator dialog is to specify the bound data. Find ItemsSource property in the property window and Select "Create Data Binding".
+Control Configulator のダイアログ上で、まずはバインドするデータを選択します。プロパティウィンドウ上でItemsSourceプロパティを見つけて、"データバインドの作成"を選択します。
 
 ![](../assets/02-03-03.png)
 
-In the data binding dialog, bindable properties in the corresponding ViewModel are listed by default. Select SalesAmountByProductData and click the button "Create Binding".
+データバインディングのダイアログ上では、バインド可能なデータの一覧が表示されるます。ここでは、SalesAmountByProductDataを選択し、"バインディングの作成" を選択します。
 
 ![](../assets/02-03-04.png)
 
-The configulator detects properties in the bound collection, which is SalesAmountByProductData in this case, and automatically set LabelMemberPath and ValueMemberPath properties.
+Control configulator は選択したクラスのバインド可能なプロパティを自動検知し、LabelMemberPath と ValueMemberPath を自動的に設定してくれます。
 
-Configure XamPieChart as you like and then click the button "Apply & Close" when you completed.
+XamPieChart のその他の設定を任意で行い、最後に「適用して閉じる」ボタンをクリックして設定を終了します。
 
 ![](../assets/02-03-05.png)
 
-## Check the result
+## 結果確認
 
-Run the app and check the result.
+アプリケーションを実行し、結果を確認します。
 
 ![](../assets/02-03-06.png)
 
-## Note
-Of cause you can change properties directly by modifying XAML code instead of using Control Configulator. If you want to learn more about XamPieChart, check the help topic here.
-[Getting Started with XamPieChart
-Getting Started](https://www.infragistics.com/help/wpf/piechart-getting-started-with-piechart)
+## 備考
+Control Configulatorを利用しなくても、XAML上でプロパティ設定を行っていくことは可能です。Control Configulatorは、チャートやグリッドなどプロパティ設定が豊富に用意されているコントロールを効率的にデザインするためのツールです。
+
+XamPieChartについて、より詳細を知りたい方は以下のリンクよりヘルプトピックをご確認下さい。
+[XamPieChart ヘルプ](https://jp.infragistics.com/help/wpf/piechart-getting-started-with-piechart)
 
 ## Next
 [02-04 Configure BulletGraph](02-04-Configure-BulletGraph.md)

@@ -1,28 +1,26 @@
-# Install Control Configulator
+# Control Configulator のインストール
 
-For the first step to get started with Infragistics Control Configulator, install it on your Visual Studio.
+Visual Studio 上で Control Configulator をインストールします。
 
-## Install Control Configulator
+## Control Configulator のインストール
 
-Open Extensions and Updates window on you Visual Studio and search Infragistics Control Configulator with the word "infragistics". 
+Visual Studio のメニューより「ツール」→「拡張機能と更新プログラム」を開き、オンラインで"infragistics"を検索すると、「Infragistics WPF and Xamarin.Forms Configulator」が見つかります。
 
 ![](../assets/02-01-01.png)
 
 ![](../assets/02-01-02.png)
 
-Download it and close Visual Studio then the installation would start soon.
+「Infragistics WPF and Xamarin.Forms Configulator」をダウンロードして、Visual Studioを閉じるとツール自体のインストールが始まります。
 
 ![](../assets/02-01-03.png)
 
-Open the project with Visual Studio again and check the configulator is installed.
+インストールが終わったら再度Visual Studioを開いて、ツールがインストールされている事を確認します。
 
 ![](../assets/02-01-04.png)
 
-## Note
+## 備考
 
-Open Dashboard.xaml and check what's in the class.
-
-[Getting Started with Control Configurators](https://www.infragistics.com/help/wpf/getting-started-with-control-configurators)
+[Infragistics Control Configurator ヘルプ](https://www.infragistics.com/help/wpf/getting-started-with-control-configurators)
 
 ## Next
-[02-02 Layout screen with XamTileManager](02-02-Layout-screen-with-XamTileManager.md)
+[02-02 XamTileManagerを利用したダッシュボードのレイアウト作成](02-02-Layout-screen-with-XamTileManager.md)

@@ -1,12 +1,13 @@
-# Use FlatDataSource
+# FlatDataSource の利用
 
-If you have an olap server, e.g. SQL Analytics Server and Oracle Essbase, then you can connect them from Infragistics Pivot controls to express the result on the analytics with Pivot UI. If you don't have those you should use FlatDataSource to be bound to Pivot controls, which can process BI requests, like filtering, slicing and drilling down, on your local machine (on your local memory).
+SQL Analytics Server や Oracle Essbase などデータ分析用のOLAPサーバーがプロジェクトで用意されている場合は、ピボット部品から分析のリクエストをサーバへ送信したり、分析結果をUI上に表現することができます。OLAPサーバーがない場合は、WPFアプリケーションが動作するクライアントのメモリ上で分析を行うためのFlatDataSourceを利用することができます。
+FlatDataSourceを利用することで、クライアントのメモリ上で自由にデータのスライスやドリルダウンなど分析を行わせることができます。
 
 ![](../assets/03-01-01.png)
 
-## Check PivotViewModel.cs
+## ViewModelの確認
 
-Open PivotViewModel.cs and check what's in the class.
+PivotViewModel.cs を開いて提供されているデータを確認します。
 
 ```cs
 ...
@@ -33,20 +34,16 @@ Open PivotViewModel.cs and check what's in the class.
 ...
 ```
 
-This class has
- - SalesFlatDataSource to be bound to pivot controls
+このクラスでは、以下が含まれます。
+ - SalesFlatDataSource - 各ピボット部品へデータバインドします
 
-Original data to be bound to FlatDataSource is "SalesData" which is same as what you bound to the grid in the Section 1.
+FlatDataSourceへバインドしている元データ（SalesData）は、セクション１で一覧表示したセールスデータと同様のものです。※特にコードを書く必要はなく、データの確認のみとなります。
 
-Note that you didn't write code but just checked what's in the View and the ViewModel in this page.
+## 備考
 
-## Note
+[ヘルプトピック FlatDataSource](https://jp.infragistics.com/help/wpf/xampivotgrid-databinding-using-flatdatasource)
 
-If you want to know more about FlatDataSource and other supported data sources check the following help topics.
-
-[Binding xamPivotGrid to FlatDataSource](https://www.infragistics.com/help/wpf/xampivotgrid-databinding-using-flatdatasource)
-
-[Supported DataSource other than FlatDataSource](https://www.infragistics.com/help/wpf/xampivotgrid-binding-data-to-the-xampivotgrid)
+[ヘルプトピック その他のデータソース](https://jp.infragistics.com/help/wpf/xampivotgrid-binding-data-to-the-xampivotgrid)
 
 ## Next
-[03-02 Use Pivot Controls](03-02-Use-Pivot-Controls.md)
+[03-02 ピボット部品の利用](03-02-Use-Pivot-Controls.md)

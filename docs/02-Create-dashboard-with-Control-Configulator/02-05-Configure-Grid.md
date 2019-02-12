@@ -77,4 +77,4 @@ Control Configuratorを利用したXamDataGridの設定について、より詳�
 [Control ConfiguratorでXamDataGridを設定](https://jp.infragistics.com/help/wpf/using-control-configurator-with-data-grid)
 
 ## Next
-[02-06 Configure CategoryChart](02-06-Configure-CategoryChart.md)
+[02-06 CategoryChart の利用](02-06-Configure-CategoryChart.md)

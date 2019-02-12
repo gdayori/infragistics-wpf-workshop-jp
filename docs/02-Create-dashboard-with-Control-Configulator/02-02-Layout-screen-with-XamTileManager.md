@@ -77,13 +77,13 @@ XamTileManager 内で4つのタイルを構成します。
 ## 備考
 XamTileManager についてより詳しい情報は以下のヘルプトピックより確認いただけます。
 
-[Using xamTileManager](https://www.infragistics.com/help/wpf/xamtilemanager-using-xamtilemanager)
+[Using xamTileManager](https://jp.infragistics.com/help/wpf/xamtilemanager-using-xamtilemanager)
 
 少し似たレイアウト系のUI部品として、XamDockManagerという部品も提供されています。Visuao Studioのドッキングペインのように、ペインをフローティングさせたりドッキングさせてタブ切り替えしたいすることがでいます。
 
-[Using xamDockManager](https://www.infragistics.com/help/wpf/xamdockmanager-using-xamdockmanager)
+[Using xamDockManager](https://jp.infragistics.com/help/wpf/xamdockmanager-using-xamdockmanager)
 
 
 
 ## Next
-[02-03 Configure PieChart](02-03-Configure-PieChart.md)
+[02-03 PieChartの利用](02-03-Configure-PieChart.md)

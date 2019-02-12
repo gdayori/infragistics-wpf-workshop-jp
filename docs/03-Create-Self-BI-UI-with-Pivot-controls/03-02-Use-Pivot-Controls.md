@@ -1,9 +1,10 @@
-# Use Pivot Controls
+# ピボット部品の利用
 
+Infragistics WPFにはピボット分析のUIコントロールとして、XamPivotGrid、XamPivotDataSelector、XamPivotDataSlicerが提供されています。
 
-## Check Pivot.xaml
+## Pivot.xaml の確認
 
-Open Pivot.xaml and check what's in the xaml.
+Pivot.xaml を開いて中身を確認します。
 
 Pivot.xaml
 
@@ -36,21 +37,21 @@ Pivot.xaml
 
 ```
 
-This xaml has
- - PivotViewModel bound to this view
- - Grid Column/Row definitions to split and layout the screen
+このXAMLには以下が含まれます。
+ - このViewにバインドされているPivotViewModel
+ - スクリーンの分割とレイアウトのための Gird 設定
 
-## Add Pivot Controls and a data chart
+## ピボット部品とチャートの配置
 
-Open Pivot.xaml and add following controls to XAML.
+Pivot.xaml を開いて以下の部品をデザイナ上に配置します。
  - XamPivotGird
  - XamPivotDataSelector
  - XamPivotDataSlicer
  - XamDataChart
 
-## Layout Controls
+## コントロールのレイアウト
 
-Set Grid setting to layout controls you put.
+配置した各コントロールのレイアウト設定(Grid設定)を以下のように行います。
 ```xml
 ...
 <ig:XamPivotGrid Grid.Column="1" Grid.RowSpan="1" />
@@ -60,9 +61,9 @@ Set Grid setting to layout controls you put.
 ...
 ```
 
-## Configure XamPivotGrid
+## XamPivotGrid の設定
 
-Bind XamPivtGrid to SalesFlatDataSource.
+SalesFlatDataSource を XamPivtGrid へデータバインドします。
 
 ```xml
 ...
@@ -70,9 +71,9 @@ Bind XamPivtGrid to SalesFlatDataSource.
 ...
 ```
 
-## Configure XamPivotDataSelector
+## XamPivotDataSelector の設定
 
-Bind XamPivotDataSelector to SalesFlatDataSource.
+SalesFlatDataSource を XamPivotDataSelector へデータバインドします。
 
 ```xml
 ...
@@ -80,9 +81,9 @@ Bind XamPivotDataSelector to SalesFlatDataSource.
 ...
 ```
 
-## Configure XamPivotDataSlicer
+## XamPivotDataSlicer の設定
 
-Bind XamPivotDataSlicer to SalesFlatDataSource. Note that you should set SlicerProvider but not DataSource property.
+SalesFlatDataSource を XamPivotDataSlicer へデータバインドします。※データソースを設定するプロパティ名は"SlicerProvider"です。
 
 ```xml
 ...
@@ -90,9 +91,9 @@ Bind XamPivotDataSlicer to SalesFlatDataSource. Note that you should set SlicerP
 ...
 ```
 
-## Configure XamPivotGrid
+## XamPivotGrid の設定
 
-Bind XamDataChart to SalesFlatDataSource and configure some property reagrding OlapXAxis.
+SalesFlatDataSource を XamDataChart へデータバインドし、チャート軸(OlapXAxis)の設定を以下の通りに行います。
 
 ```xml
 ...
@@ -112,6 +113,5 @@ Bind XamDataChart to SalesFlatDataSource and configure some property reagrding O
 ![](../assets/03-02-01.png)
 
 ## Note
-If you want to know more about pivot controls please check the following help topic.
 
-[Using xamPivotGrid](https://www.infragistics.com/help/wpf/xampivotgrid-using-xampivotgrid)
+[xamPivotGrid ヘルプ](https://jp.infragistics.com/help/wpf/xampivotgrid-using-xampivotgrid)

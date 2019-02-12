@@ -20,7 +20,7 @@ Visual Studio のメニューより「ツール」→「拡張機能と更新プ
 
 ## 備考
 
-[Infragistics Control Configurator ヘルプ](https://www.infragistics.com/help/wpf/getting-started-with-control-configurators)
+[Infragistics Control Configurator ヘルプ](https://jp.infragistics.com/help/wpf/getting-started-with-control-configurators)
 
 ## Next
 [02-02 XamTileManagerを利用したダッシュボードのレイアウト作成](02-02-Layout-screen-with-XamTileManager.md)

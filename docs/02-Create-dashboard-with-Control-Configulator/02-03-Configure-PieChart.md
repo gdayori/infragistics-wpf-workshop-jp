@@ -68,4 +68,4 @@ XamPieChartについて、より詳細を知りたい方は以下のリンクよ
 [XamPieChart ヘルプ](https://jp.infragistics.com/help/wpf/piechart-getting-started-with-piechart)
 
 ## Next
-[02-04 Configure BulletGraph](02-04-Configure-BulletGraph.md)
+[02-04 BulletGraph の利用](02-04-Configure-BulletGraph.md)

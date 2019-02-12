@@ -73,4 +73,4 @@ XamCategoryChartは少ないコードで簡単にデータ視覚化を実現す�
 [XamDataChart ヘルプ](https://jp.infragistics.com/help/wpf/datachart-getting-started-with-datachart)
 
 ## Next
-[Overview of Section3](../03-Create-Self-BI-UI-with-Pivot-controls/03-00-Overview-of-Section3.md)
+[ピボット部品を利用したセルフBI画面の作成](../03-Create-Self-BI-UI-with-Pivot-controls/03-00-Overview-of-Section3.md)

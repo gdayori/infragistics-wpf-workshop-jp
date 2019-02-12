@@ -74,4 +74,4 @@ XamBulletGraphについて、より詳細を知りたい方は以下のリンク
 [Bullet Graph ヘルプ](https://jp.infragistics.com/help/wpf/bulletgraph-adding)
 
 ## Next
-[02-05 Configure Grid](02-05-Configure-Grid.md)
+[02-05 Grid の利用](02-05-Configure-Grid.md)

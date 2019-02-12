@@ -41,7 +41,7 @@ MainWindow.xaml を開いて、XamDataGridの列の設定や機能に関する�
 ## 備考
 XamDataGrid には今回試した機能設定以外にも非常に多くの機能やUI表現を実現するための仕組みが用意されています。興味がある方は、以下のヘルプトピックより他にどんなことができるのか確認してください。
 
-[XamDataGrid ヘルプ](https://www.infragistics.com/help/wpf/xamdatagrid)
+[XamDataGrid ヘルプ](https://jp.infragistics.com/help/wpf/xamdatagrid)
 
 ## Next
 [02-00 チャート部品とControl Configulatorを利用したダッシュボードの作成](../02-Create-dashboard-with-Control-Configulator/02-00-Overview-of-Section2.md)

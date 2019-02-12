@@ -24,7 +24,7 @@
             </ig:XamTileManager.NormalModeSettings>
 
             <ig:XamTile
-                Header="Sales Amount By Product in this year"
+                Header="年間製品別売上比率"
                 ig:XamTileManager.Column="0"
                 ig:XamTileManager.Row="0" 
                 ig:XamTileManager.ColumnSpan="1"
@@ -33,7 +33,7 @@
             </ig:XamTile>
 
             <ig:XamTile
-                Header="Total Sales Amount in this year"
+                Header="年間売り上げ"
                 ig:XamTileManager.Column="1"
                 ig:XamTileManager.Row="0" 
                 ig:XamTileManager.ColumnSpan="1"
@@ -51,7 +51,7 @@
             </ig:XamTile>
 
             <ig:XamTile
-                Header="Top 30 large deals in this year"
+                Header="取引上位30"
                 ig:XamTileManager.Column="2"
                 ig:XamTileManager.Row="0" 
                 ig:XamTileManager.ColumnSpan="1"
@@ -74,7 +74,7 @@
             </ig:XamTile>
 
             <ig:XamTile
-                Header="Monthly Sales Amount in this year"
+                Header="月別売り上げ"
                 ig:XamTileManager.Column="0"
                 ig:XamTileManager.Row="1" 
                 ig:XamTileManager.ColumnSpan="2"

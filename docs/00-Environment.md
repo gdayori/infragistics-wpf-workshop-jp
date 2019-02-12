@@ -1,14 +1,10 @@
-# Environment
+# 環境要件
 
-You need environments listed below on your PC to proceed with this workshop 
+ハンズオンを始める前に、以下の環境が
 
-* Infragistics WPF (Trial version is OK!)
-* Visual Studio 2018 or 2015
-* .NET framework 4.6 or later installed
-
-## Datasource to use
-
-All datasource is in the project you downloaded for this workshop. No need to prepare of local db / web service.
+* Infragistics WPF (トライアル版 可)
+* Visual Studio 2017 / 2015 (Professional版 以上)
+* .NET framework 4.5.2 以降
 
 ## Next
-[Section 1 - Get started with Infragistics grid control](01-Use-Infragistics-Grid-control/01-00-Overview-of-Section1.md)
+[Section 1 - グリッド部品を利用した一覧の作成](01-Use-Infragistics-Grid-control/01-00-Overview-of-Section1.md)

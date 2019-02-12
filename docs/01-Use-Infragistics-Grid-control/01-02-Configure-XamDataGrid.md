@@ -1,4 +1,4 @@
-# Configure XamDataGrid
+# XamDataGridの設定
 XamDataGrid has a lot of properties that allow you to implement required specifications and make your app more rich very easily.
 
 ## Setting some properties of XamDataGrid

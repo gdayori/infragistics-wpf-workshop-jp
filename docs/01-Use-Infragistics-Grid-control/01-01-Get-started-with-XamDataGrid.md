@@ -1,12 +1,12 @@
-# Get started with XamDataGrid
+# XamDataGridの利用
 
-If you have installed Infragistics WPF controls, all controls should be ready in the Toolbox in your Visual Studio. You can use them just like you develop with Common WPF Controls.
+PC上にInfragistics WPF部品をインストールしていれば、収録されているすべてのコントロールがVisual Studio上のTool Boxに表示されます。利用方法はWPF標準コントロールと同じで、ドラッグ＆ドロップでコントロールをデザイナ上に配置できます。
 
-Please open the project in "before" folder you downloaded, which is in infragistics-wpf-workshop/src/before.
+ダウンロードしたZipファイルを解凍し、beforeフォルダの中のソリューションをVisual Studioで開きましょう。
 
-## Check MainWindowViewModel.cs
+## ViewModelの確認
 
-Open MainWindowViewModel.cs and check what's in the class.
+MainWindowViewModel.cs を開いて提供されているデータを確認します。
 
 ```cs
 ...
@@ -34,14 +34,14 @@ public ObservableCollection<Sale> SalesRecords
     
 ```
 
-This class has
- - SalesRecords to be bound to XamDataGrid
- - OpenDashboardCommand to bring up the dashboard window (used in the 2nd section)
- - OpenPivotCommand to bring up the BI window (used in the 3rd section)
+このクラスには以下が含まれます。
+ - SalesRecords - XamDataGrid へバインドするデータ
+ - OpenDashboardCommand - ダッシュボード画面を立ち上げるコマンド (section 2 で利用します。)
+ - OpenPivotCommand - ピボット画面を立ち上げるコマンド (section 2 で利用します。)
 
-## Check MainWindow.xaml
+## MainWindow.xaml の確認
 
-Open MainWindow.xaml and check what's in the xaml.
+MainWindow.xaml を開いて中身を確認します。
 ```xml
 <Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -72,14 +72,14 @@ Open MainWindow.xaml and check what's in the xaml.
 </Window>
 ```
 
-This xaml has
- - MainWindowViewModel bound to this view
- - Grid Column/Row definitions to split and layout the screen
- - Two buttons to bring up another windows
+このXAMLには以下が含まれます。
+ - このViewにバインドされているMainWindowViewModel
+ - スクリーンの分割とレイアウトのための Gird 設定
+ - ダッシュボード画面とピボット画面立ち上げようのボタン
 
-## Add XamDataGrid in MainWindow.xaml
+## XamDataGrid の追加
 
-Open MainWindow.xaml and drag XamDataGrid in your Toolbox and drop into the designer. Reset the layout of XamDataGrid and bind the grid to SalesRecords by setting the DataSource property.
+MainWindow.xaml を開いている状態で、ツールボックスからXamDataGridをドラッグ＆ドロップでデザイナ上に配置します。 更に、XamDataGridのレイアウトをリセットし、DataSourceプロパティにSalesRecordsをバインドします。
 
 MainWindow.xaml
 
@@ -89,15 +89,15 @@ MainWindow.xaml
 ・・・
 ```
 
-## Check the result
+## 結果確認
 
-Run the app and check the result.
+アプリケーションを実行し、結果を確認します。
 
 ![](../assets/01-01-01.png)
 
-## Note
+## 備考
 
-XamDataGrid has a capability of generating column definitions automatically corresponding to the bound data. If you want to configure columns to display in detail you need to set AutoGenerateFields property to False and define all fields. (You'll do it later in the 2nd section.)
+XamDataGrid にはバインドデータのプロパティに応じて自動的に列設定を生成する仕組みがあります。自分で列定義を細かく設定していくこともできますが、この例では自動生成の仕組みを使ってグリッド表示しています。
 
 ## Next
-[01-02 Configure XamDataGrid](01-02-Configure-XamDataGrid.md)
+[01-02 XamDataGridの設定](01-02-Configure-XamDataGrid.md)

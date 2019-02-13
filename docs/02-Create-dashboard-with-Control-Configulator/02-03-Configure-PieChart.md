@@ -65,6 +65,7 @@ XamPieChart のその他の設定を任意で行い、最後に「適用して�
 Control Configulatorを利用しなくても、XAML上でプロパティ設定を行っていくことは可能です。Control Configulatorは、チャートやグリッドなどプロパティ設定が豊富に用意されているコントロールを効率的にデザインするためのツールです。
 
 XamPieChartについて、より詳細を知りたい方は以下のリンクよりヘルプトピックをご確認下さい。
+
 [XamPieChart ヘルプ](https://jp.infragistics.com/help/wpf/piechart-getting-started-with-piechart)
 
 ## Next

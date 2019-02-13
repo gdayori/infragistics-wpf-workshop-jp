@@ -5,7 +5,7 @@
 ## XamDataGrid へバインドするデータソースの確認
 
 DashboardViewModel.cs を開いて、ブレークポイントを設定してから実行し、Top30LargeDeals の中にどんなデータが入っているのか見てみましょう。
-以下のようなデータが格納されています。
+以下のようなスキーマのデータが格納されています。
 
 | AmountOfSale | City | Date | NumberOfUnits | ProductName | SalesPerson | UnitPrice |
 ----|----|----|----|----|----|----

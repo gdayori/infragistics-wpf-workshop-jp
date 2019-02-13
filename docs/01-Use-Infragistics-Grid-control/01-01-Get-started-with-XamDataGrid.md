@@ -1,10 +1,10 @@
-# XamDataGridの利用
+# XamDataGrid の利用
 
 PC上にInfragistics WPF部品をインストールしていれば、収録されているすべてのコントロールがVisual Studio上のTool Boxに表示されます。利用方法はWPF標準コントロールと同じで、ドラッグ＆ドロップでコントロールをデザイナ上に配置できます。
 
 ダウンロードしたZipファイルを解凍し、beforeフォルダの中のソリューションをVisual Studioで開きましょう。
 
-## ViewModelの確認
+## ViewModel の確認
 
 MainWindowViewModel.cs を開いて提供されているデータを確認します。
 

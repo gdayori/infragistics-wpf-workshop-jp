@@ -31,6 +31,15 @@ Dashboard.xaml
 </ig:XamTile>
 ...
 ```
+## ~~Control Configulator で~~ XamCategoryChart を設定
+**[注意] 2019/02/13 時点で Control Configulator を XamCategoryChart(version 18.2) 上で利用しようとするとエラーが発生します。代わりに、以下のコードを貼り付けてXamCategoryChartを設定して下さい。**
+
+```xml
+...
+<ig:XamCategoryChart ChartType="Auto" ItemsSource="{Binding Path=MonthlySalesAmount}" TrendLineType="CubicFit" XAxisInterval="1" Brushes="#FF7446B9 #FF9FB328 #FFF96232 #FF2E9CA6 #FFDC3F76 #FFFF9800 #FF3F51B5 #FF439C47 #FF795548 #FF9A9A9A" Outlines="#FF7446B9 #FF9FB328 #FFF96232 #FF2E9CA6 #FFDC3F76 #FFFF9800 #FF3F51B5 #FF439C47 #FF795548 #FF9A9A9A" MarkerBrushes="#FFFFFFFF" MarkerOutlines="#FF7446B9 #FF9FB328 #FFF96232 #FF2E9CA6 #FFDC3F76 #FFFF9800 #FF3F51B5 #FF439C47 #FF795548 #FF9A9A9A" TrendLineBrushes="#FFF6CE2F #FFF3654D #FF00C6AC #FF38A8E1 #FFB16FC0 #FFE63C53 #FF8AD662 #FF6F72C0" NegativeBrushes="#FFC62828" NegativeOutlines="#FFC62828"  />
+...
+```
+
 
 ## Control Configulator で XamCategoryChart を設定
 

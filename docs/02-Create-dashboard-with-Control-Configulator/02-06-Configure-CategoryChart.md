@@ -15,7 +15,7 @@ DashboardViewModel.cs を開いて、ブレークポイントを設定してか�
 
 ## XamCategoryChart の配置
 
-Dashboard.xaml を開き、月別売り上げのタイル内にXamPieChart を配置し、レイアウトをリセットします。
+Dashboard.xaml を開き、月別売り上げのタイル内に XamCategoryChart を配置し、レイアウトをリセットします。
 
 Dashboard.xaml
 

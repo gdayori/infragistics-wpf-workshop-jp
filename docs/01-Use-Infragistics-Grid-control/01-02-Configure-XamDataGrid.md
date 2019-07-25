@@ -7,7 +7,7 @@ MainWindow.xaml を開いて、XamDataGridの列の設定や機能に関する�
 
 ```xml
 ...
-<Custom:XamDataGrid DataSource="{Binding Path=SalesRecords}" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1"  >
+<Custom:XamDataGrid DataSource="{Binding Path=SalesRecords}" Grid.Row="1" Grid.ColumnSpan="2" >
     <Custom:XamDataGrid.FieldLayoutSettings>
         <Custom:FieldLayoutSettings AutoGenerateFields="False" FilterUIType="LabelIcons"/>
     </Custom:XamDataGrid.FieldLayoutSettings>

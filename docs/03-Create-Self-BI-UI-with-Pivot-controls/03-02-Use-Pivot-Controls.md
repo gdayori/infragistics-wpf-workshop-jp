@@ -91,7 +91,7 @@ SalesFlatDataSource を XamPivotDataSlicer へデータバインドします。�
 ...
 ```
 
-## XamPivotGrid の設定
+## XamDataChart の設定
 
 SalesFlatDataSource を XamDataChart へデータバインドし、チャート軸(OlapXAxis)の設定を以下の通りに行います。
 

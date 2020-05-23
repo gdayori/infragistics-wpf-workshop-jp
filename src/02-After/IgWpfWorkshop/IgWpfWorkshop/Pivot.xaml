@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:IgWpfWorkshop"
         xmlns:vm="clr-namespace:IgWpfWorkshop.ViewModel" xmlns:ig="http://schemas.infragistics.com/xaml" x:Class="IgWpfWorkshop.Pivot"
         mc:Ignorable="d"
-        Title="Pivot" Height="600" Width="1000"
+        Title="ピボット分析" Height="600" Width="1000"
         >
     <Window.DataContext>
         <vm:PivotViewModel/>

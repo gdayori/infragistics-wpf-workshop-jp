@@ -21,7 +21,10 @@ Dashboard.xaml
     ig:XamTileManager.ColumnSpan="1"
     ig:XamTileManager.RowSpan="1">
     <StackPanel VerticalAlignment="Center" >
-        <TextBlock/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+	        <TextBlock />
+	        <TextBlock />
+        </StackPanel>
         <ig:XamBulletGraph/>
     </StackPanel>
 </ig:XamTile>
@@ -53,13 +56,16 @@ TargetValue プロパティへ SalesTargetThisYear を、Value プロパティ�
 
 ## TextBlock へ TotalSales を設定.
 
-TextBlockのTextプロパティへTotalSalesThisYearをバインドします。以下のようにコードを記述してください。
+TextBlockのTextプロパティへTotalSalesThisYearをバインドし、さらに単位の(百万円)を次のTextBlockに設定します。以下のようにコードを記述してください。
 
 Dashboard.xaml
 
 ```xml
 ...
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="80" Text="{Binding Path=TotalSalesThisYear, StringFormat= $ {0} M }"/>
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="60" Text="{Binding TotalSalesThisYear, StringFormat=\{0\}}"/>
+    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="30" Text="  (百万円)" />
+</StackPanel>
 </ig:XamBulletGraph ...>
 ...
 ```

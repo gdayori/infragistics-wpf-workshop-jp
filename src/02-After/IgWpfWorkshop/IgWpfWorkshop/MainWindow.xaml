@@ -20,8 +20,8 @@
             <RowDefinition Height="25px"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Content="Dashboard" Command="{Binding OpenDashboard}" Grid.Column="0"/>
-        <Button Content="Pivot" Command="{Binding OpenBiWindow}" Grid.Column="1"/>
+        <Button Content="ダッシュボード" Command="{Binding OpenDashboard}" Grid.Column="0"/>
+        <Button Content="ピボット分析" Command="{Binding OpenBiWindow}" Grid.Column="1"/>
 
         <Custom:XamDataGrid DataSource="{Binding Path=SalesRecords}" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1"  >
             <Custom:XamDataGrid.FieldLayoutSettings>
@@ -37,7 +37,7 @@
                 <Custom:FieldLayout>
                     <Custom:TextField Name="SalesPerson" Label="担当営業" />
                     <Custom:DateTimeField Name="Date" Label="受注日" />
-                    <Custom:TextField Name="City" Label="事業所" />
+                    <Custom:TextField Name="City" Label="都道府県" />
                     <Custom:TextField Name="ProductName" Label="製品名" />
                     <Custom:NumericField Name="NumberOfUnits" Label="数量" />
                     <Custom:NumericField Name="UnitPrice" Label="単価" />

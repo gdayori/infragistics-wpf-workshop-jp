@@ -21,7 +21,7 @@ MainWindow.xaml を開いて、XamDataGridの列の設定や機能に関する�
         <Custom:FieldLayout>
             <Custom:TextField Name="SalesPerson" Label="担当営業" />
             <Custom:DateTimeField Name="Date" Label="受注日" />
-            <Custom:TextField Name="City" Label="事業所" />
+            <Custom:TextField Name="City" Label="都道府県" />
             <Custom:TextField Name="ProductName" Label="製品名" />
             <Custom:NumericField Name="NumberOfUnits" Label="数量" />
             <Custom:NumericField Name="UnitPrice" Label="単価" />

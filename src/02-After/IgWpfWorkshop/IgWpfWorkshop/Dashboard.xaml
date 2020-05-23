@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:IgWpfWorkshop"
         xmlns:vm="clr-namespace:IgWpfWorkshop.ViewModel" xmlns:ig="http://schemas.infragistics.com/xaml" xmlns:Custom="http://infragistics.com/DataPresenter" x:Class="IgWpfWorkshop.Dashboard"
         mc:Ignorable="d"
-        Title="Sales Dashboard in this year" Height="600" Width="1000"
+        Title="営業ダッシュボード" Height="600" Width="1000"
         >
     <Window.DataContext>
         <vm:DashboardViewModel/>
@@ -39,8 +39,11 @@
                 ig:XamTileManager.ColumnSpan="1"
                 ig:XamTileManager.RowSpan="1">
                 <StackPanel VerticalAlignment="Center" >
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="80" Text="{Binding TotalSalesThisYear, StringFormat=$ \{0\} M}"/>
-                    <ig:XamBulletGraph Background="#00FFFFFF" BackingBrush="#00FFFFFF" FontBrush="#E13F51B5" Interval="20" MaximumValue="150" TargetValue="{Binding SalesTargetThisYear}" Value="{Binding TotalSalesThisYear}" TargetValueBrush="#FFFF3B37" ValueBrush="#FFFF7123" ValueInnerExtent="0.4" ValueOuterExtent="0.75" VerticalAlignment="Center" RangeBrushes="#333F51B5 #503F51B5 #6D3F51B5 #8A3F51B5 #A73F51B5 #C43F51B5 #E13F51B5" RangeOutlines="#00FFFFFF" >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="60" Text="{Binding TotalSalesThisYear, StringFormat=\{0\}}"/>
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="30" Text="  (百万円)" />
+                    </StackPanel>
+                    <ig:XamBulletGraph Background="#00FFFFFF" BackingBrush="#00FFFFFF" FontBrush="#E13F51B5" Height="100" Interval="20" MaximumValue="150" TargetValue="{Binding Path=SalesTargetThisYear}" Value="{Binding Path=TotalSalesThisYear}" TargetValueBrush="#FFFF3B37" ValueBrush="#FFFF7123" ValueInnerExtent="0.4" ValueOuterExtent="0.75" VerticalAlignment="Center" RangeBrushes="#333F51B5 #503F51B5 #6D3F51B5 #8A3F51B5 #A73F51B5 #C43F51B5 #E13F51B5" RangeOutlines="#00FFFFFF" >
                         <ig:XamBulletGraph.Ranges>
                             <ig:XamLinearGraphRange EndValue="50" InnerEndExtent="0.3" InnerStartExtent="0.3" OuterEndExtent="0.85" OuterStartExtent="0.85" StartValue="0" />
                             <ig:XamLinearGraphRange EndValue="100" InnerEndExtent="0.3" InnerStartExtent="0.3" OuterEndExtent="0.85" OuterStartExtent="0.85" StartValue="50" />
